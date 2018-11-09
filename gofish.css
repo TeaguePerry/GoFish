@@ -1,0 +1,202 @@
+* { box-sizing: border-box; }
+
+body {
+  background-color: #004f70;
+  color: #a0534d;
+  font-family: sans-serif;
+  height: 150px
+}
+header {
+  background-image: url("gofishlogo.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #004f70;
+}
+h1 {
+  font-size: 300%;
+  padding-top: 50px;
+  padding-left: 4em;
+}
+nav {
+  font-weight: bold;
+  padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #856f02;
+}
+
+nav a {
+  float: left;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+
+  }
+
+  nav a:link { color: ##000; }
+  nav a:visited { color: #b39c06; }
+  nav a:hover { background-color: #81875c; }
+
+
+nav li {
+    float: left;
+}
+
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+
+  display: block;
+
+  }
+
+.column {
+    color: #a0534d;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+
+footer {
+  background-color: #9BC1C2;
+  font-size: .60em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+}
+
+.studio {
+  font-style: italic;
+}
+
+.floatleft {
+  float: left;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+.clear {
+  clear: both;
+}
+
+.wrapper {
+  background-color: #f5f5f5;
+  min-width: 1200px;
+  max-width: 1480px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+#mobile { display: none;}
+#desktop { display: inline;}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding-top: 1px;
+  }
+  nav {
+    float: none;
+    width: auto;
+    padding-left: 2em;
+  }
+  nav a {
+    padding: 0.2em;
+    margin-left: 0.3em;
+    float: left;
+    width: 23%
+  }
+  main {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+    font-size: 90%;
+    clear: both;
+  }
+  #hero {
+    width: 100%;
+    height: auto;
+  }
+  h2, h3, p, dl {
+    padding-right: 2em;
+  }
+  main ul {
+    margin-left: 2em;
+  }
+  .floatleft {
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+  .clear {
+    padding-left: 2em;
+  }
+
+}
+
+@media only all and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    padding-left: 1.5em;
+    padding-top: 0.25em;
+    width: 85%;
+    text-align: center;
+  }
+  nav a {
+    padding: 0.5em;
+    width: 45%;
+    float: left;
+    min-width: 6em;
+    margin-left: 0.5em;
+  }
+  main {
+    padding: 0;
+  }
+  #hero {
+    display: none;
+  }
+  footer {
+    padding: 0.5em;
+    margin: 0;
+  }
+  .floatleft {
+    float: none;
+    display: none;
+  }
+  .column {
+        width: 100%;
+    }
+  #mobile { display: inline; }
+  #desktop { display: none;}
+}
+
+header, nav, main, footer {display: block;}
