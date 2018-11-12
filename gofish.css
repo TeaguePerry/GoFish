@@ -58,29 +58,33 @@ main {
 
   }
 
+  footer {
+    background-color: #9BC1C2;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    }
+
 .column {
     color: #a0534d;
     float: left;
     width: 33.33%;
-    padding: 10px;
+    padding: 20px;
     height: 300px;
     }
-
-/* Clear floats after the columns */
+  .column2 {
+      color: #a0534d;
+      float: left;
+      width: 50%;
+      padding: 20px;
+      height: 600px;
+      }
 .row:after {
     content: "";
     display: table;
     clear: both;
     }
-
-
-footer {
-  background-color: #9BC1C2;
-  font-size: .60em;
-  font-style: italic;
-  text-align: center;
-  padding: 1em;
-}
 
 .studio {
   font-style: italic;
@@ -104,7 +108,9 @@ footer {
   margin-left: auto;
 }
 
-
+.active {
+  background-color: #000;
+}
 
 #mobile { display: none;}
 #desktop { display: inline;}
