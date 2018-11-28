@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #004f70;
@@ -6,28 +8,31 @@ body {
   font-family: sans-serif;
   height: 150px
 }
+
 header {
   background-image: url("gofishlogo.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-color: #004f70;
 }
+
 h1 {
   font-size: 300%;
   padding-top: 50px;
   padding-left: 4em;
 }
+
 nav {
   font-weight: bold;
   padding: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #856f02;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #856f02;
 }
 
 nav a {
@@ -37,54 +42,65 @@ nav a {
   font-weight: bold;
   text-align: center;
   padding: 1em;
+}
 
-  }
+nav a:link {
+  color: ##000;
+}
 
-  nav a:link { color: ##000; }
-  nav a:visited { color: #b39c06; }
-  nav a:hover { background-color: #81875c; }
+nav a:visited {
+  color: #b39c06;
+}
 
+nav a:hover {
+  background-color: #81875c;
+}
 
 nav li {
-    float: left;
+  float: left;
 }
 
 main {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
-
   display: block;
+}
 
-  }
+footer {
+  background-color: #9BC1C2;
+  font-size: .60em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+}
 
-  footer {
-    background-color: #9BC1C2;
-    font-size: .60em;
-    font-style: italic;
-    text-align: center;
-    padding: 1em;
-    }
+.center {
+  padding: 20px;
+  text-align: center;
+}
 
 .column {
-    color: #a0534d;
-    float: left;
-    width: 33.33%;
-    padding: 20px;
-    height: 300px;
-    }
-  .column2 {
-      color: #a0534d;
-      float: left;
-      width: 50%;
-      padding: 20px;
-      height: 600px;
-      }
+  color: #a0534d;
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 300px;
+}
+
+.column2 {
+  color: #a0534d;
+  float: left;
+  width: 50%;
+  padding: 1px;
+  height: 600px;
+}
+
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .studio {
   font-style: italic;
@@ -92,6 +108,12 @@ main {
 
 .floatleft {
   float: left;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+.floatright {
+  float: right;
   margin-right: 4em;
   margin-bottom: 2em;
 }
@@ -112,8 +134,40 @@ main {
   background-color: #000;
 }
 
-#mobile { display: none;}
-#desktop { display: inline;}
+form {
+  margin-left: 40%;
+    margin-right:25%;
+    width: 25%;
+  background-color: #eaeaea;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+label {
+  float: left;
+  width: 100px;
+  clear: left;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+input, textarea {
+  margin-top: 10px;
+  display: block;
+}
+
+#mySubmit {
+  margin-left: 100px;
+}
+
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inline;
+}
 
 @media only screen and (max-width: 1024px) {
   body {
@@ -166,7 +220,6 @@ main {
   .clear {
     padding-left: 2em;
   }
-
 }
 
 @media only all and (max-width: 600px) {
@@ -199,10 +252,19 @@ main {
     display: none;
   }
   .column {
-        width: 100%;
-    }
-  #mobile { display: inline; }
-  #desktop { display: none;}
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  #mobile {
+    display: inline;
+  }
+  #desktop {
+    display: none;
+  }
 }
 
-header, nav, main, footer {display: block;}
+header, nav, main, footer {
+  display: block;
+}
